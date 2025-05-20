@@ -1,21 +1,28 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+
+
+import  "./App.css"
+import Header from "./components/Header"
+import Footer from "./components/Footer"
+import Main from "./components/Main"
+
+
+
+
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <ol>
-      <li>
-        React is a popular language and it is important to learn it
-      </li>
-      <li>
-        I am more likely to get a job with React in my Resume
-      </li>
-    </ol>
+    <>
+      <Header />
+      <Main />
+      <Footer />
+    
+    </>
   )
-}
+} 
+
+
 
 export default App
